@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-table-todo_items
+      author: shyam
+      changes:
+      - createTable:
+          tableName: TODO_ITEMS
+          columns:
+          - column:
+              name: id
+              type: BIGINT
+              autoIncrement: true
+              constraints:
+                nullable: false
+                primaryKey: true
+                primaryKeyName: todo_items_pkey
+          - column:
+              name: course
+              type: VARCHAR(20)
+              
+              
+            
+            

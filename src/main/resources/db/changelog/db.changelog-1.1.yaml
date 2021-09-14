@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-table-todo_items
+      author: shyam
+      changes:
+      - insert:
+          tableName: TODO_ITEMS
+          columns:
+          - column:
+               name: course
+               value: "java"
+              
+              
+            
+            
